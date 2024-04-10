@@ -1,4 +1,4 @@
-**March Madness: A Journey Through Collegiate Basketball**
+# Introduction
 
 March—the month of madness, the month of elite college basketball. It's the time when college students rally behind their schools, hoping for a chance to make it to the championship final. But out of the 64 teams that qualify for the tournament, only one will emerge as the champion. The heartbreak and frustration felt by the other 63 teams are palpable.
 
@@ -11,11 +11,12 @@ As the tournament unfolded, I witnessed brackets crumbling left and right. It wa
 
 My initial focus was on understanding how a team’s regular-season performance correlates with their tournament performance. To explore this, I decided to visualize the performance of selected number 1 seeds and gain insights into their seeding, based on the AP Polls. 
 
-![Image Alt Text](/Users/josephguzman/Desktop/planting-march-madness/Comparison_of_Number_1_Seeds.jpg)
+
+![Image Alt Text](https://github.com/josephguzman03/planting-march-madness/blob/main/Comparison_of_champ_teams.jpg)
 
 The trends seem to be subutle, nothing to drastic. Majority of the teams seem to have the right for their placement, as their perfromance were known to be within the top 5. The more I tried to understand the data, I had to also compare the number one ranked team, Alabama with the championship finalists. 
 
-![Image Alt Text](//Users/josephguzman/Desktop/planting-march-madness/Comparison_of_champ_teams.jpg)
+![Image Alt Text](https://github.com/josephguzman03/planting-march-madness/blob/main/Comparison_of_champ_teams.jpg)
 
 When comparing the performances of the teams that reached the championship game, it's notable that their scores exhibited less consistency throughout the season compared to Alabama. However, these teams showed improvement from their initial Pre scores to their final scores, indicating progression in their performance over time. UConn, the winners of the 2023 March Madness, had a very interesting performance, fluctuating throughout the season. This is important because relying solely on the AP Polls may not be a strong indicator of how these teams perform in the postseason.
 
