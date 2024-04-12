@@ -1,4 +1,4 @@
-# Introduction
+# Introduction: The Seed
 
 March—the month of madness, the month of elite college basketball. It's the time when college students rally behind their schools, hoping for a chance to make it to the championship final. But out of the 64 teams that qualify for the tournament, only one will emerge as the champion. The heartbreak and frustration felt by the other 63 teams are palpable.
 
@@ -7,12 +7,12 @@ The 2024 March Madness was my introduction to the world of collegiate basketball
 As the tournament unfolded, I witnessed brackets crumbling left and right. It wasn't until the Oakland Uni. vs. University of Kentucky matchup that my own bracket met its demise. Oakland, an underdog not on my radar, pulled off an unexpected victory. Despite my limited knowledge of collegiate basketball, I felt comfortable with my selections. However, reality soon set in: Teams that defied popular expectations were not guaranteed to win, and by the end of the first round, only a mere 0.005% of perfect brackets remained, as reported by ESPN News. Thus, my interest in predicting a team’s performance within the tournament using a Machine Learning Approach began.
 
 
-# AP Polls
+# AP Polls Visualization Commentary
 
 My initial focus was on understanding how a team’s regular-season performance correlates with their tournament performance. To explore this, I decided to visualize the performance of selected No. 1 seeds and gain insights into their seeding based on the AP Polls.
 
 
-![Image Alt Text](https://github.com/josephguzman03/planting-march-madness/blob/main/Comparison_of_Number_1_Seeds.jpg.jpg)
+![Image Alt Text](https://github.com/josephguzman03/planting-march-madness/blob/main/Comparison_of_Number_1_Seeds.jpg)
 
 
 The trends seem to be subtle, with nothing too drastic. The majority of the teams seem to have the right to be nominated as a No. 1 seed, as their performances were known to be within the top 5 throughout most of the season. Yet, their performances did not correlate with their march madness performance, as Kansas lost against No. 8 seed Arkansas, and Purdue faced a major upset against No. 16 seed Fairleigh Dickinson. Notably, Alabama and Miami managed to make it to the Sweet 16 but fell short against teams that surpassed them to reach the final four. If we take another look at the teams' performances that made it to the championship game, their performances differ.   
@@ -26,14 +26,13 @@ While the answer to this question is highly anticipated, it's important to note 
 
 For now, my goal is to figure out how to predict a team's postseason performance based on their regular-season performance. To understand how teams managed to win, we must also consider how teams are seeded. Thus, in this report, I replicated the seeding process through ML analysis using Linear Regression and Random Forest Regression.
 
-# Seeding Prediction 
+# Seeding Replication Prediction 
 
 ## Data Cleaning 
 
 First, I downloaded my datasets from statehead.com and acquired the necessary data points for my analysis to work. There were three vital datasets: history_stats, school_rank, and coach_stats_copy. Each dataset had its respective columns that were either important or repeated. Therefore, after a few rounds of data cleaning, my dataframe 'final' was created.
 
 |    |   Rk | School        |   SRS |   SOS |   FG% |   3P% |   FT% |   ORB |   TRB |   AST |   BLK |   TOV |   PF |   seed |   Yrs |   Overall_W-L% |   SZNCHAMPS |   TORNCHAMPS |   NCAA |   FF |   NATCHAMPS |   SZNC_W-L% |   OC_W-L% |   C_NCAA |   C_FF |   C_CHAMP |\n|---:|-----:|:--------------|------:|------:|------:|------:|------:|------:|------:|------:|------:|------:|-----:|-------:|------:|---------------:|------------:|-------------:|-------:|-----:|------------:|------------:|----------:|---------:|-------:|----------:|\n|  0 |    4 | Alabama       | 23.19 |  9.65 | 0.442 | 0.335 | 0.725 |   484 |  1652 |   555 |   189 |   512 |  691 |      1 |   111 |          0.62  |          12 |            9 |     25 |    0 |           0 |       0.838 |     0.689 |        6 |      0 |         0 |\n|  1 |   11 | Arizona       | 19.08 |  8.34 | 0.494 | 0.378 | 0.708 |   356 |  1376 |   662 |   110 |   468 |  593 |      2 |   117 |          0.663 |          26 |            9 |     38 |    4 |           1 |       0.8   |     0.847 |        2 |      0 |         0 |\n|  2 |   12 | Arizona State | 11.29 |  8.18 | 0.421 | 0.322 | 0.689 |   395 |  1315 |   515 |   170 |   422 |  668 |     11 |   109 |          0.53  |           8 |            0 |     17 |    0 |           0 |       0.639 |     0.579 |        4 |      0 |         0 |\n|  3 |   13 | Arkansas      | 15.99 |  9.87 | 0.466 | 0.313 | 0.698 |   373 |  1272 |   462 |   182 |   458 |  694 |      8 |   101 |          0.64  |          26 |            7 |     35 |    6 |           1 |       0.611 |     0.73  |        6 |      0 |         0 |\n|  4 |   17 | Auburn        | 14.35 |  9.29 | 0.439 | 0.315 | 0.696 |   396 |  1231 |   479 |   172 |   414 |  655 |      9 |   118 |          0.542 |           5 |            3 |     13 |    1 |           0 |       0.618 |     0.666 |       12 |      1 |         0 |
-
 
 ## Linear Regression using MSE
 
